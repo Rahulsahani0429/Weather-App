@@ -22,14 +22,14 @@
             <h2 class="city"> New Delhi</h2>
             <div class="details">
                 <div class="col">
-                    <img src="/weather-app/image/humidity.png">
+                    <img src="humidity.png">
                     <div>
                         <p class="humidity">50%</p>
                         <p>Humidity</p>
                     </div>
                 </div>
                 <div class="col">
-                    <img src="/weather-app/image/wind.png">
+                    <img src="/wind.png">
                     <div>
                         <p class="wind">15km/h</p>
                         <p>wind Speed</p>
@@ -62,19 +62,19 @@
             document.querySelector('.wind').innerHTML = data.wind.speed + "km/h";
 
             if (data.weather[0].main == "clouds") {
-                weacherIcon.src = "/weather-app/image/clouds.png";
+                weacherIcon.src = "clouds.png";
             }
             else if (data.weather[0].main == "Rain") {
-                weacherIcon.src = "/weather-app/image/rain.png";
+                weacherIcon.src = "rain.png";
             }
             else if (data.weather[0].main == "Drizzle") {
-                weacherIcon.src = "/weather-app/image/drizzle.png";
+                weacherIcon.src = "drizzle.png";
             }
             else if (data.weather[0].main == "Mist") {
-                weacherIcon.src = "/weather-app/image/mist.png";
+                weacherIcon.src = "mist.png";
             }
             else if (data.weather[0].main == "Clear") {
-                weacherIcon.src = "/weather-app/image/clear.png";
+                weacherIcon.src = "clear.png";
             }
         }
 
